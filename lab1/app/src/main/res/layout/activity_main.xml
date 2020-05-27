@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/background_dark">
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:text="+"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="50dp"
+        android:layout_above="@+id/multiplyButton"/>
+
+    <Button
+        android:id="@+id/substractButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:text="-"
+        android:layout_above="@+id/divideButton"
+        android:layout_toRightOf="@+id/addButton"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="50dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:text="*"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="50dp"/>
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:text="/"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="50dp"
+        android:layout_toRightOf="@+id/multiplyButton"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:id="@+id/firstDigitSpinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/addButton"
+        android:layout_marginLeft="125dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/secondDigitSpinner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/addButton"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/firstDigitSpinner"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>
